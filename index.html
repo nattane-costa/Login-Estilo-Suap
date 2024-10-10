@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <figure>
+          <img
+            src="img/logoIF-removebg-preview.png"
+            alt="Logo IF Goiano"
+            class="logo"
+          />
+        </figure>
+      </div>
+
+      <div class="logo-text-container">
+        SISTEMA UNIFICADO DE ADMINISTRAÇÃO PÚBLICA
+      </div>
+    </header>
+    <main>
+      <div class="login-container">
+        <div class="form-container">
+          <h2>Login IFGOIANO</h2>
+          <form action="">
+            <label for="">Usuário:</label>
+            <input type="text" id="usuario" placeholder="Usuário" />
+
+            <label for="">Senha:</label>
+            <div class="password-container">
+              <input type="password" id="password" placeholder="Senha" />
+              <i class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+
+            <input type="submit" id="acessar-bnt" value="Acessar" />
+
+            <a href="#"> Esqueceu ou deseja alterar sua senha?</a>
+
+            <div class="container-separator">
+              <hr class="hr-half" />
+              ou
+              <hr class="hr-half" />
+            </div>
+            <div class="alternativa-entrar">
+              <a href="#">
+                Entrar com
+                <img src="img/gov-logo-removebg-preview.png" alt="Gov BR" />
+              </a>
+            </div>
+          </form>
+        </div>
+
+        <div class="img-container">
+          <img class="teste" src="img/img-removebg-preview.png" alt="" />
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h4>Acessos</h4>
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-sign-in"></i>Login</a>
+            </li>
+            <li>
+              <a href="#"> <i class="fa fa-key"></i> Alterar Senha</a>
+            </li>
+            <li>
+              <a href="#"> <i class="fa fa-book"></i>Tutorial de 1º Acesso</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Consultas</h4>
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-book"></i>Processos Físicos</a>
+            </li>
+            <li>
+              <a href="#"> <i class="fa fa-book"></i>Planos de Ensino</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-book"></i>Documentos Gerais</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-book"></i>Assinaturas Digitais</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-book"></i>Processos Eletrônicos</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-book"></i>Contratos</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-book"></i>Avaliação Integrada</a>
+            </li>
+            <li>
+              <a href="#"> <i class="fa fa-book"></i>Atualizações do Sistema</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-book"></i>Farol de Desempenho</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-book"></i>Modelos de Processos</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Ensino</h4>
+          <ul>
+            <li>
+              <a href="#"
+                ><i class="fa fa-book"></i>Certificados de Minicursos</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-book"></i>Certificação ENCCEJA / ENEM</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const eyeIcon = document.querySelector(".fa-eye");
+      const passwordInput = document.getElementById("password");
+
+      eyeIcon.addEventListener("click", function () {
+        const type =
+          passwordInput.getAttribute("type") === "password"
+            ? "text"
+            : "password";
+        passwordInput.setAttribute("type", type);
+        this.classList.toggle("fa-eye-slash"); // Muda o ícone
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,227 @@
+* {
+  margin: 0; /* Define a margem em zero, garantindo que não haverá espaços inesperados*/
+  padding: 0; /* Define o padding (espaço interno dos elementos) em zero*/
+  box-sizing: border-box; /*Define o modelo de caixa para que width e height incluam o padding e
+     a borda, facilitando o controle do layout.*/
+}
+
+body {
+  font-family: "Open Sans";
+}
+
+header {
+  height: 100px;
+  display: flex;
+  border-bottom: solid 3px rgba(128, 128, 128, 0.2);
+}
+
+.logo-container {
+  width: 25vw;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-text-container {
+  width: 75vw;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 5vw;
+}
+
+.logo {
+  height: 80px;
+}
+
+main {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.login-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+  width: 45%;
+}
+
+form {
+  background-color: rgb(239, 243, 239);
+  border-radius: 2%;
+  margin: 40px;
+  padding: 40px;
+}
+
+.form-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #deecff;
+}
+
+input:focus {
+  border: 2px solid green;
+  outline: none; /* Remove o contorno padrão ao focar */
+}
+
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-container input {
+  padding-right: 30px;
+  height: 40px; /* Ajuste o valor para o tamanho desejado */
+}
+
+.password-container i {
+  position: absolute;
+  right: 10px;
+  top: 50%; /* Move o ícone 50% do topo */
+  transform: translateY(-50%); /* Centraliza verticalmente */
+  cursor: pointer;
+  color: #666;
+}
+
+.password-field i:hover {
+  color: #333;
+}
+
+#acessar-bnt {
+  width: 100%;
+  padding: 10px;
+  background-color: #198754;
+  border-radius: 20px;
+  margin: 20px 0;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+}
+
+#acessar-bnt:hover {
+  background-color: #45a049;
+}
+
+a {
+  display: block;
+  text-align: right;
+  color: #45a049;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container-separator {
+  display: flex;
+  justify-content: center;
+}
+
+.hr-half {
+  width: 80px;
+  margin: 5px;
+}
+
+.alternativa-entrar {
+  margin: 0 auto;
+  background-color: #a7a5a5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 30px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  padding-left: 5px;
+}
+
+.alternativa-entrar a {
+  text-decoration: none;
+  color: white;
+}
+
+.alternativa-entrar img {
+  height: 20px;
+  margin-left: 10px;
+}
+
+img {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  background-color: #292929;
+  color: white;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-column h4 {
+  font-size: 13px;
+  font-weight: 100;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.footer-column ul {
+  list-style-type: none;
+}
+
+.footer-column li {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 8px;
+}
+
+.footer-column li i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.footer-column a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+  color: #028743;
+}
